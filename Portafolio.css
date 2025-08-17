@@ -1,0 +1,153 @@
+body {
+   background-image: 
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 100, 150, 0.5)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1740&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tittle{
+    color: white;
+    font-size: 40px;  /*Tamaño de la letra*/
+    text-align: center; /*Alineación de la letra*/
+}
+
+h5#Descrip{
+    font-family: cursive;
+}
+
+
+/*Estudios*/
+.contenedor {
+    display: flex;
+  justify-content: center; /* centra horizontal */
+  margin: 0; /* elimina márgenes por defecto */
+  gap: 0;  /* espacio entre cuadros */
+}
+
+.cuadro {
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 30%;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+p.cont{
+    color: white;
+    font-size: 25px;  /*Tamaño de la letra*/
+    text-align: center; /*Alineación de la letra*/
+    font-family: cursive;
+}
+
+
+/* Estilo para la barra de navegación */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);  /* Fondo negro con transparencia (0.7 sobre 1) */
+  padding: 10px 20px;                   /* Espacio interior: 10px arriba/abajo y 20px a los lados */
+  position: fixed;                      /* Fija la barra en la parte superior de la pantalla aunque se haga scroll */
+  top: 0;                               /* La deja pegada al borde superior */
+  width: 100%;                          /* Ocupa todo el ancho de la pantalla */
+  display: flex;                        /* Usa Flexbox para alinear los elementos */
+  justify-content: center;             /* Centra los enlaces horizontalmente */
+  gap: 30px;                            /* Espacio de 30px entre cada enlace */
+  z-index: 1000;                        /* Se asegura de que la barra quede por encima de todo lo demás */
+}
+
+/* Estilo para los enlaces dentro de la barra */
+nav a {
+  color: white;                        /* Texto blanco */
+  text-decoration: none;              /* Quita el subrayado típico de los enlaces */
+  font-weight: bold;                  /* Hace el texto más grueso */
+  font-size: 18px;                    /* Tamaño de letra más grande */
+  transition: color 0.1s;             /* Hace que el cambio de color al pasar el mouse sea suave (en 0.1 segundos) */
+}
+
+/* Estilo cuando pasás el mouse por encima de un enlace */
+nav a:hover {
+  color: #00ffff;                     /* Cambia el color del texto a celeste brillante (cian) al pasar el mouse */
+}
+
+.Filas_Laterales { 
+  display: flex;
+  gap: 0;  /* espacio entre cuadros */
+  margin: 0;
+  width: 100%;
+  justify-content: space-between; /* primer elemento a la izquierda, último a la derecha, espacio equitativo entre */
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.Cuadro_Trabajo{
+    width: 35%; 
+    color: white;
+    margin: 30px;
+    justify-content: flex-start;
+    margin-left: 2cm;
+}
+
+/* Ajusta el tamaño de la imagen */
+.Imagen_Axia img {
+  height: 450px;                 /* Altura fija */
+  border-radius: 20px;            /* Bordes redondeados */
+  max-width: 100%;
+  object-fit: cover;             /* Ajusta la imagen sin deformarla */
+  margin-top: 2cm;
+}
+
+.Cuadro_Experiencia {
+  color: white;
+  margin-top: 15%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* Contenedor para colocar las experiencias una al lado de la otra */
+.experiencia-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea al borde derecho */
+  gap: 2px;
+  text-align: center;
+}
+
+/* Cada bloque individual de experiencia */
+.experiencia-box {
+  border: 0;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+h2#Exp {
+    text-align: right;     /* Alinea el texto del título a la derecha */
+    margin-right: 120px;    /* Lo aleja un poco del borde derecho */
+    margin-bottom: 20px;
+}
+
+#Contacto{
+    color: whitesmoke;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+#Contacto a:hover{
+    color: #00ffff;
+}
+
+#Contacto a{
+    color: whitesmoke;
+}
+
+footer{
+    color: black;
+    font-family: monospace;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 10px;
+}
